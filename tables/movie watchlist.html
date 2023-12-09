@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="movie watchlist.css">
+</head>
+<body>
+    <h1>My Movie Watchlist</h1>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Added Date</th>
+            </tr>
+        </thead>
+        <tbody id="watchlistTable">
+
+        </tbody>
+    </table>
+
+
+    <h2>Add a Movie</h2>
+    <form id="addMovieForm">
+        <label for="movieTitle">Movie Title:</label>
+        <input type="text" id="movieTitle" required>
+        <input type="submit" value="Add Movie">
+    </form>
+
+    <script>
+
+        function addMovie() {
+            const movieTitle = document.getElementById("movieTitle").value;
+            const addedDate = new Date().toLocaleDateString();
+
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+                <td>${movieTitle}</td>
+                <td>${addedDate}</td>
+            `;
+
+
+            const watchlistTable = document.getElementById("watchlistTable");
+            watchlistTable.appendChild(newRow);
+
+
+            document.getElementById("movieTitle").value = "";
+        }
+
+
+        document.getElementById("addMovieForm").addEventListener("submit", function (e) {
+            e.preventDefault(); 
+            addMovie(); 
+        });
+    </script>
+</body>
+</html>

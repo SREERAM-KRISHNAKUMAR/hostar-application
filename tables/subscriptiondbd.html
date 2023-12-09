@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscription Form</title>
+    <link rel="stylesheet" href="subscriptiondbd.css">
+</head>
+<body>
+    <h1>Subscription Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="subscription_id">Subscription ID:</label></td>
+                <td><input type="text" id="subscription_id" name="subscription_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="user_id">User ID:</label></td>
+                <td><input type="text" id="user_id" name="user_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="plan_type">Plan Type:</label></td>
+                <td>
+                    <select id="plan_type" name="plan_type" required>
+                        <option value="Basic">Basic</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Pro">Pro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="start_date">Start Date:</label></td>
+                <td><input type="date" id="start_date" name="start_date" required></td>
+            </tr>
+            <tr>
+                <td><label for="end_date">End Date:</label></td>
+                <td><input type="date" id="end_date" name="end_date" required></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

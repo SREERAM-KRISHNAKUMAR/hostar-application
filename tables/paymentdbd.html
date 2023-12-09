@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="paymentdbd.css">
+</head>
+<body>
+    <h1>Payment Details</h1>
+    <form action="process_form.php" method="post">
+        <table>
+            <tr>
+                <td>Payment ID:</td>
+                <td><input type="Payment ID" name="Payment id" required></td>
+            </tr>
+            <tr>
+                <td>User ID:</td>
+                <td><input type="User ID" name="User id" required></td>
+            </tr>
+            
+            <tr>
+                <td>Payment Method:</td>
+                <td>
+                    <select name="Payment method">
+                        <option value="basic">none</option>
+                        <option value="Credit card">Credit Card</option>
+                        <option value="Debit Card">Debit Card</option>
+                        <option value="UPI">UPI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Subscription Plan:</td>
+                <td>
+                    <select name="subscription">
+                        <option value="basic">none</option>
+                        <option value="basic">Super</option>
+                        <option value="premium">Premium/year</option>
+                        <option value="pro">Premium/month</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Payment Status:</td>
+                <td>
+                    <input type="radio" name="payment_status" value="paid" required> Paid
+                    <input type="radio" name="payment_status" value="unpaid" required> Unpaid
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

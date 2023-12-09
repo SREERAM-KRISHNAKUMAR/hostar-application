@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Devices Table</title>
+    <link rel="stylesheet" href="devicedbd.css">
+</head>
+<body>
+    
+    <h1>Devices</h1>
+    
+
+    <form>
+        <label for="deviceId">Device ID *:</label>
+        <input type="text" id="deviceId" name="deviceId" required>
+        
+        <label for="deviceType">Device Type *:</label>
+        <select id="deviceType" name="deviceType" required>
+            <option value="Laptop">Laptop</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Desktop">Desktop</option>
+
+        </select>
+        
+        <label for="userId">User ID *:</label>
+        <input type="text" id="userId" name="userId" required>
+        
+        <input type="submit" value="Add Device">
+        
+    </form>
+    
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Device ID</th>
+                <th>Device Type</th>
+                <th>User ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

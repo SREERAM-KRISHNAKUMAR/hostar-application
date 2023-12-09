@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Table</title>
+    <link rel="stylesheet" href="userdbd.css">
+</head>
+<body>
+
+<h1>User Information</h1>
+
+
+<form id="userForm">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId" required><br><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<script>
+    // JavaScript code to handle form submission and display data in the table
+    document.getElementById("userForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Get user input values
+        var userId = document.getElementById("userId").value;
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phoneNumber = document.getElementById("phoneNumber").value;
+
+        // Create a new table row with the user data
+        var newRow = document.createElement("tr");
+        newRow.innerHTML = "<td>" + userId + "</td><td>" + name + "</td><td>" + email + "</td><td>" + phoneNumber + "</td>";
+
+        // Append the new row to the table
+        document.getElementById("userData").appendChild(newRow);
+
+        // Clear the form inputs
+        document.getElementById("userForm").reset();
+    });
+</script>
+
+</body>
+</html>

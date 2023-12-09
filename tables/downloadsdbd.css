@@ -1,0 +1,15 @@
+body {
+       
+    background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1479056860242006021/pu/img/j9PdPDfpWgs2p0w3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.85;
+
+}
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 4 ;
+}

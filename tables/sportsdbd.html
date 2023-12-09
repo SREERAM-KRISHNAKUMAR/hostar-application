@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Matches</title>
+    <link rel="stylesheet" href="moviedbd.css">
+</head>
+<body>
+    <h1>Sports Matches</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Match ID</th>
+            <th>Sport Type</th>
+            <th>Event Type</th>
+            <th>Match Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Football</td>
+            <td>World Cup</td>
+            <td>Final Match - Argentina vs France</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tennis</td>
+            <td>Wimbledon</td>
+            <td>Men's Singles - Semifinal</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Basketball</td>
+            <td>NBA</td>
+            <td>Regular Season - Lakers vs. Celtics</td>
+        </tr>
+
+    </table>
+    
+    <br>
+    
+    <label for="matchSelect">Select a match to watch:</label>
+    <select id="matchSelect">
+        <option value="1">Football - World Cup - Final Match</option>
+        <option value="2">Tennis - Wimbledon - Men's Singles Semifinal</option>
+        <option value="3">Basketball - NBA - Lakers vs. Celtics</option>
+
+    </select>
+    
+    <button onclick="watchMatch()">Watch Match</button>
+
+    <script>
+        function watchMatch() {
+            var selectedMatch = document.getElementById("matchSelect").value;
+            alert("You have selected Match ID " + selectedMatch + " to watch.");
+
+        }
+    </script>
+</body>
+</html>
+

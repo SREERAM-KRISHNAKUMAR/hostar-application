@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ratings Table</title>
+    <link rel="stylesheet" href="movie ratingsdbd.css">
+</head>
+<body style="background-color: black; opacity: 0.8;">
+    <h1 style="color: white;">Movie Ratings</h1>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: white;">
+        <thead>
+            <tr>
+                <th>Movie Rating ID</th>
+                <th>User ID</th>
+                <th>Movie ID</th>
+                <th>Rating</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><input type="text" placeholder="Auto-generated" readonly></td>
+                <td><input type="text" id="userId" name="userId"></td>
+                <td><input type="text" id="movieId" name="movieId"></td>
+                <td><input type="text" id="rating" name="rating"></td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            
+            <input type="submit" value="Submit" style="background-color: rgba(78, 38, 38, 0.642); color: white; padding: 10px; border: none; cursor: pointer;">
+        </tbody>
+    </table>
+</body>
+</html>

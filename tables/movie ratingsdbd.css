@@ -1,0 +1,15 @@
+body {
+       
+    background-image: url("https://media.istockphoto.com/id/1194541872/vector/realistic-3d-cinema-film-strip-in-perspective-isolated-on-blue-background-vector-template.jpg?s=612x612&w=0&k=20&c=BuygDRH6v-u651E3O009P395h8crapr_CrSoXOF7R0s=");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.85;
+
+}
+table {
+    
+    border-collapse: collapse;
+    width: 70%;
+    line-height: 3 ;
+}

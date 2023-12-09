@@ -1,0 +1,45 @@
+/* Style for the movies table */
+
+body {
+       
+  background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1479056860242006021/pu/img/j9PdPDfpWgs2p0w3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.85;
+
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+
+  table, th, td {
+    border: 1px solid #d3cece;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style for the table header */
+  th {
+    background-color: #150202;
+    color: white;
+  }
+
+  td {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Style for table rows on hover */
+  td:hover {
+    background-color: #050f27;
+    color: rgb(247, 243, 243);
+    cursor: pointer;
+  }
+  
